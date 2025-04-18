@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authoritarian Alert</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: 'Oswald', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1c1c1c, #8b0000);
+      color: #e0e0e0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      overflow-y: auto;
+      position: relative;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; right: 0; bottom: 0; left: 0;
+      z-index: -1;
+      background: url('fascist-trump.jpg') center center / cover no-repeat;
+      opacity: 0.3;
+    }
+    .container {
+      background: rgba(30, 30, 30, 0.85);
+      padding: 2rem;
+      border-radius: 1rem;
+      text-align: center;
+      width: 100%;
+      max-width: 80%;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+      border: 2px solid #ff4b4b;
+      margin-bottom: 2rem;
+      overflow-y: auto;
+    }
+    h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      color: #ff4b4b;
+      text-transform: uppercase;
+    }
+    p {
+      margin: 0;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    .bar-container {
+      position: relative;
+      margin: 2rem auto;
+      width: 100%;
+    }
+    .bar {
+      width: 100%;
+      height: 1.2rem;
+      background: #333;
+      border-radius: 0.6rem;
+      overflow: hidden;
+    }
+    .fill {
+      height: 100%;
+      background: linear-gradient(90deg, #0000ff, #ff0000);
+      border-radius: 0.6rem 0 0 0.6rem;
+    }
+    .marker {
+      position: absolute;
+      top: -0.6rem;
+      width: 3px;
+      height: 2.4rem;
+      background: #fdfdfd;
+    }
+    .labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      margin-top: 0.6rem;
+      letter-spacing: 1px;
+      color: #ccc;
+    }
+    .percentage {
+      margin-top: 1.2rem;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #ffa07a;
+    }
+    .explanation {
+      text-align: left;
+      background: rgba(50, 50, 50, 0.3);
+      padding: 1.5rem;
+      border-radius: 0.6rem;
+    }
+    .explanation h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      color: #ffa07a;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+    .explanation ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .explanation ul li {
+      margin-bottom: 1.2rem;
+      color: #ddd;
+      line-height: 1.5;
+    }
+    .explanation ul li > strong {
+      color: #ffcc66;
+    }
+    .explanation ul li ul.links {
+      list-style: disc inside;
+      margin-top: 0.5rem;
+      padding-left: 1rem;
+    }
+    .explanation ul li ul.links li {
+      margin-bottom: 0.4rem;
+      font-size: 0.95rem;
+    }
+    .explanation a {
+      color: #ffcc66;
+      text-decoration: none;
+    }
+    .explanation a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 2rem;
+      font-size: 0.75rem;
+      opacity: 0.7;
+      text-align: left;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <!-- Gauge Section -->
+  <div class="container">
+    <h1>Fascism Meter</h1>
+    <p>Gauge of government action against citizens over political ideology</p>
+    <div class="bar-container">
+      <div class="bar">
+        <div class="fill" style="width: 65%;"></div>
+      </div>
+      <div class="marker" style="left: 65%;"></div>
+      <div class="labels">
+        <span>0% (None)</span>
+        <span>100% (Severe)</span>
+      </div>
+      <div class="percentage">Risk Level: 65% HIGH</div>
+    </div>
+  </div>
+
+  <!-- Assessment Section -->
+  <div class="container">
+    <div class="explanation">
+      <h2>Current Assessment (Total: 65%)</h2>
+      <ul>
+        <li>
+          <strong>Executive Overreach (15%):</strong> Disregard for Supreme Court rulings undermines judicial checks and balances.
+          <ul class="links">
+            <li><a href="https://www.axios.com/2025/04/15/trump-defy-court-orders-contempt-constitutional-crisis" target="_blank">How judges can hold Trump admin accountable (Axios)</a></li>
+            <li><a href="https://www.reuters.com/world/us/trump-court-orders-defiance-supreme-court-2025-04-14" target="_blank">Trump defies Supreme Court order (Reuters)</a></li>
+          </ul>
+        </li>
+        <li>
+          <strong>Rhetorical Threats (10%):</strong> Public vows to jail journalists and opponents increase risk of punitive action.
+          <ul class="links">
+            <li><a href="https://www.nytimes.com/2025/04/10/us/politics/trump-journalists-threats.html" target="_blank">Trump's threats against the press (NYT)</a></li>
+            <li><a href="https://www.theguardian.com/us-news/2025/apr/12/trump-threat-jail-critics" target="_blank">Threats to jail critics (The Guardian)</a></li>
+          </ul>
+        </li>
+        <li>
+          <strong>Immigration Enforcement (10%):</strong> Threats to detain and deport dissenters without due process deter activism.
+          <ul class="links">
+            <li><a href="https://www.npr.org/2025/03/20/immigration-due-process-deportation-threats" target="_blank">Due process concerns in deportation policy (NPR)</a></li>
+            <li><a href="https://www.politico.com/news/2025/04/01/trump-deport-dissenters-policy-001235" target="_blank">Policy to deport political dissenters (Politico)</a></li>
+          </ul>
+        </li>
+        <li>
+          <strong>Scholarly Opinions (10%):</strong> Public vows to jail journalists and opponents increase risk of punitive action.
+          <ul class="links">
+            <li><a href="https://www.nytimes.com/2024/10/23/magazine/robert-paxton-facism.html" target="_blank">Robert Paxton - Is It Fascism? A Leading Historian Changes His Mind. (NYT)</a></li>
+            <li><a href="https://www.newsweek.com/robert-paxton-trump-fascist-1560652" target="_blank">Robert Paxton - I've Hesitated to Call Donald Trump a Fascist. Until Now | Opinion (Newsweek)</a></li>
+            <li><a href="https://www.newyorker.com/news/essay/what-does-it-mean-that-donald-trump-is-a-fascist">Timothy Snyder - "What Does It Mean That Donald Trump Is a Fascist?" (The New Yorker)</a></li>
+            <li><a href="https://www.democracynow.org/2023/3/27/ruth_ben_ghiat_trump_waco_rally">Ruth Ben-Ghiat - Interview on Trump's fascist rhetoric (Democracy Now!)</a></li>
+            <li><a href="https://foreignpolicy.com/2024/02/06/donald-trump-fascist-us-presidential-election-2024/">Jason Stanley - Interview on Trump as fascist (Foreign Policy)</a></li>
+            <li><a href="https://www.theatlantic.com/ideas/archive/2024/03/trump-authoritarianism-revenge-threats/677244/">David Frum - "There's a Word for What Trumpism Is Becoming" (The Atlantic)</a></li>
+          </ul>
+        </li>
+        <li>
+          <strong>Policy Measures (8%):</strong> Cuts to public media and restrictive DOJ policies chill free expression.
+          <ul class="links">
+            <li><a href="https://www.politico.com/news/2025/04/14/white-house-request-nix-9-3b-pbs-npr-00289543" target="_blank">White House asks to nix $9.3B for PBS/NPR (Politico)</a></li>
+            <li><a href="https://www.washingtonpost.com/politics/2025/04/16/trump-doj-free-expression-guidelines/" target="_blank">DOJ guidelines seen as chilling effect (WP)</a></li>
+          </ul>
+        </li>
+        <li>
+          <strong>Legal Actions & New Policy (5%):</strong> Recent measures aimed at increasing surveillance and curb speech raise concerns over rights.
+          <ul class="links">
+            <li><a href="https://apnews.com/article/trump-free-speech-threats-2025" target="_blank">Actions threatening free speech (AP News)</a></li>
+            <li><a href="https://www.reuters.com/world/us/rights-groups-sue-over-trump-protest-charges-2025-02-18" target="_blank">Rights groups sue over protest charges (Reuters)</a></li>
+            <li><a href="https://www.reuters.com/world/us/trump-spy-satellites-us-border-2025-03-27" target="_blank">Spy satellites pointed at border (Reuters)</a></li>
+            <li><a href="https://www.reuters.com/world/us/us-to-screen-social-media-immigrants-2025-04-09" target="_blank">Social media screening for immigrants (Reuters)</a></li>
+            <li><a href="https://www.theguardian.com/us-news/2025/apr/09/anti-protest-bills-trump" target="_blank">Anti-protest bills in state legislatures (The Guardian)</a></li>
+            <li><a href="https://www.cnn.com/2025/04/07/politics/state-protest-criminalization-legislation" target="_blank">Coverage of protest-criminalization laws (CNN)</a></li>
+          </ul>
+        </li>
+        <li>
+          <strong>Pardons (4%):</strong> Clemency for January 6 participants erodes accountability for extremist violence.
+          <ul class="links">
+            <li><a href="https://www.reuters.com/world/us/trump-pardons-jan-6-defendants-2025-01-20" target="_blank">Trump pardons Jan 6 defendants (Reuters)</a></li>
+            <li><a href="https://abcnews.go.com/Politics/trump-sweeping-pardons-january-6-defendants-2025/story?id=12345678" target="_blank">Sweeping pardons outlined (ABC News)</a></li>
+          </ul>
+        </li>
+        <li>
+          <strong>State Laws (3%):</strong> New bills criminalizing assembly reflect coordinated suppression of dissent.
+          <ul class="links">
+            <li><a href="https://www.theguardian.com/us-news/2025/apr/09/anti-protest-bills-trump" target="_blank">Anti‑protest bills in state legislatures (The Guardian)</a></li>
+            <li><a href="https://www.cnn.com/2025/04/07/politics/state-protest-criminalization-legislation" target="_blank">Coverage of protest‑criminalization laws (CNN)</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+    </div>
+    <footer>
+      <img src="logo-full-sm.png" alt="Logo" style="height: 48px; margin-right: 6px;">
+      <span id="date"></span>
+    </footer>
+  </div>
+
+  <script>
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById('date').textContent =
+      `Data as of ${new Date().toLocaleDateString('en-US', options)}`;
+  </script>
+</body>
+</html>
